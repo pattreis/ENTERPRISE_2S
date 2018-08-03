@@ -1,0 +1,7 @@
+C:\Users\Administrator\source\repos\01.fiap.helloWorld.console\01.fiap.helloWorld.console\bin\Debug\01.fiap.helloWorld.console.exe.config
+C:\Users\Administrator\source\repos\01.fiap.helloWorld.console\01.fiap.helloWorld.console\bin\Debug\01.fiap.helloWorld.console.exe
+C:\Users\Administrator\source\repos\01.fiap.helloWorld.console\01.fiap.helloWorld.console\bin\Debug\01.fiap.helloWorld.console.pdb
+C:\Users\Administrator\source\repos\01.fiap.helloWorld.console\01.fiap.helloWorld.console\obj\Debug\01.fiap.helloWorld.console.csprojAssemblyReference.cache
+C:\Users\Administrator\source\repos\01.fiap.helloWorld.console\01.fiap.helloWorld.console\obj\Debug\01.fiap.helloWorld.console.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\source\repos\01.fiap.helloWorld.console\01.fiap.helloWorld.console\obj\Debug\01.fiap.helloWorld.console.exe
+C:\Users\Administrator\source\repos\01.fiap.helloWorld.console\01.fiap.helloWorld.console\obj\Debug\01.fiap.helloWorld.console.pdb
