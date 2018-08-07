@@ -4,10 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _01.fiap.helloWorld.console.Model
+namespace _01.Exercicios
 {
-    interface IAquatico
+    public enum TipoConta
     {
-        void Flutar();
+        Comum,
+        Especial,
+        Premium
     }
 }

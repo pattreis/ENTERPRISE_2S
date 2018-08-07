@@ -4,10 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _01.fiap.helloWorld.console.Model
+namespace _01.Exercicios
 {
-    interface IAquatico
+    class Program
     {
-        void Flutar();
+        static void Main(string[] args)
+        {
+        }
     }
 }

@@ -3,9 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2035
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.fiap.helloWorld.console", "01.fiap.helloWorld.console\01.fiap.helloWorld.console.csproj", "{B0F46D13-9D50-4042-B82E-EFD66D9BFFE2}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.Exercicios", "..\..\..\source\repos\01.Exercicios\01.Exercicios\01.Exercicios.csproj", "{1FC73274-B570-41E9-B7F6-EB02B527A469}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.Exercicios", "01.Exercicios\01.Exercicios.csproj", "{1FC73274-B570-41E9-B7F6-EB02B527A469}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,10 +11,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{B0F46D13-9D50-4042-B82E-EFD66D9BFFE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B0F46D13-9D50-4042-B82E-EFD66D9BFFE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B0F46D13-9D50-4042-B82E-EFD66D9BFFE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B0F46D13-9D50-4042-B82E-EFD66D9BFFE2}.Release|Any CPU.Build.0 = Release|Any CPU
 		{1FC73274-B570-41E9-B7F6-EB02B527A469}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{1FC73274-B570-41E9-B7F6-EB02B527A469}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1FC73274-B570-41E9-B7F6-EB02B527A469}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -26,6 +20,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {8619BE81-595D-43F9-B5E6-130219513A11}
+		SolutionGuid = {9E4F3B37-B7CF-499C-B615-6FB601C60228}
 	EndGlobalSection
 EndGlobal

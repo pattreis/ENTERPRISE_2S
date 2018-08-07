@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace _01.fiap.helloWorld.console.Model
 {
-    class Lancha : Veiculo
+    class Lancha : Veiculo, IAquatico
     {
         public bool BoteSalvaVida { get; set; }
 
@@ -23,6 +23,11 @@ namespace _01.fiap.helloWorld.console.Model
         public override void Desligar()
         {
             System.Console.WriteLine("Desligando a lancha...");
+        }
+
+        public void Flutar()
+        {
+            System.Console.WriteLine("Flutuando");
         }
     }
 }

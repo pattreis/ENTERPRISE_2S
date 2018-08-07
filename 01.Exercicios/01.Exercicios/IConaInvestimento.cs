@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _01.fiap.helloWorld.console.Model
+namespace _01.Exercicios
 {
-    interface IAquatico
+    interface IConaInvestimento
     {
-        void Flutar();
+        void CalculaRetornoInvestimento();
     }
 }
