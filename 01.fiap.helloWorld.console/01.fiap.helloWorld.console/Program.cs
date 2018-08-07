@@ -11,7 +11,7 @@ namespace _01.fiap.helloWorld.console
     {
         static void Main(string[] args)
         {
-            Carro carro = new Carro();
+            Carro carro = new Carro(2010,2.0);
             carro.Ano = 2010;
             carro.ArCondicionado = false;
 
@@ -19,7 +19,7 @@ namespace _01.fiap.helloWorld.console
             System.Console.WriteLine(carro.ArCondicionado);
             Console.ReadKey();
 
-            var lancha = new Lancha()
+            var lancha = new Lancha(2019,50)
             {
                 BoteSalvaVida = true,
                 Ano = 2010
