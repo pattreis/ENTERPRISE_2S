@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace _01.Exercicios
 {
-    interface IConaInvestimento
+    interface IContaInvestimento
     {
-        void CalculaRetornoInvestimento();
+        decimal CalculaRetornoInvestimento();
     }
 }

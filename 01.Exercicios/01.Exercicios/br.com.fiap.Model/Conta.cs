@@ -8,7 +8,7 @@ namespace _01.Exercicios
 {
     public abstract class Conta
     {
-        private int Agencia { get; set; } 
+        public int Agencia { get; set; } 
 
         public DateTime DataAbertura { get; set; }
 
