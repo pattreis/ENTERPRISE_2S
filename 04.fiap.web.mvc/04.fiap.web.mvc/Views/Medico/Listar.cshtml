@@ -1,0 +1,26 @@
+﻿@model List<_04.fiap.web.mvc.Models.Medico>
+@{
+    ViewBag.Title = "Listar";
+}
+
+<h2>Listar</h2>
+
+<table class="table">
+    <tr>
+        <th>CRM</th>
+        <th>NOME</th>
+        <th>SALÁRIO</th>
+        <th>DESCRIÇÃO</th>
+        <th>ATIVO</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.Crm</td>
+            <td>@item.Nome</td>
+            <td>@item.Salario</td>
+            <td>@item.Descricao</td>
+            <td>@(item.Ativo ? "Ativo" : "Inativo")</td>
+        </tr>
+    }
+</table>
