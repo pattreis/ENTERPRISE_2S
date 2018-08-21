@@ -1,20 +1,20 @@
 ﻿@model _04.fiap.web.mvc.Models.Medico
 
 @{
-                /**/
+    /**/
 
-                ViewBag.Title = "Cadastrar";
+    ViewBag.Title = "Cadastrar";
 }
 
 <h2>Cadastrar</h2>
 @if (@TempData["msg"] != null)
 {
-<div class="alert alert-success">
-    @TempData["msg"]
-</div>
+    <div class="alert alert-success">
+        @TempData["msg"]
+    </div>
 }
 
-    
+
 @using (Html.BeginForm())
 {
     <div class="form-group">
@@ -41,9 +41,9 @@
 
     <div class="form-group">
         @Html.CheckBoxFor(m => m.Ativo)
-        @Html.LabelFor(m => m.Ativo)  
+        @Html.LabelFor(m => m.Ativo)
     </div>
-    <input type="submit" value="Cadastrar" class="btn btn-primary"/>
+    <input type="submit" value="Cadastrar" class="btn btn-primary" />
 
 
 }

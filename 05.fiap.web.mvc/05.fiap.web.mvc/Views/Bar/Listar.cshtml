@@ -1,0 +1,31 @@
+﻿@model List<_05.fiap.web.mvc.Models.Bar>
+
+    @{
+        ViewBag.Title = "Listar";
+    }
+
+    <h2>Listar</h2>
+
+    <table class="table">
+
+
+        <tr>
+            <th>Nome</th>
+            <th>Descrição</th>
+            <th>Proibido Menor</th>
+            <th>Cidade</th>
+        </tr>
+
+        <tbody>
+            @foreach (var item in Model)
+            {
+            <tr>
+                <td>@item.Nome</td>
+                <td>@item.Descricao</td>
+                <td>@(item.ProibidoMenor ? "Sim" : "Não" )</td>
+                <td>@item.Cidade</td>
+            </tr>
+            }
+        </tbody>
+
+    </table>

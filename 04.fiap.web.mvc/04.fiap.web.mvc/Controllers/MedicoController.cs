@@ -28,7 +28,7 @@ namespace _04.fiap.web.mvc.Controllers
 
         [HttpPost]
         public ActionResult Cadastrar(Medico medico)
-        {
+        { 
             _banco.Add(medico);//add no banco de dados
             TempData["msg"] = "Médico cadastrado!"; // Mensagem para a tela
             
