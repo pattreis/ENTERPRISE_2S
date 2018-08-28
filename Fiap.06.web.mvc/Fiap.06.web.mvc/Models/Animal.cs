@@ -21,7 +21,7 @@ namespace Fiap._06.web.mvc.Models
 
         public bool Castrado { get; set; }
 
-        public float Peso { get; set; }
+        public double Peso { get; set; }
 
     }
 }

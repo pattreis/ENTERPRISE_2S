@@ -15,7 +15,8 @@ namespace Fiap._06.web.mvc
         {
             AreaRegistration.RegisterAllAreas();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
-            Database.SetInitializer(new DropCreateDatabaseIfModelChanges<PetshopContext>());
+            Database.SetInitializer(
+                new DropCreateDatabaseIfModelChanges<PetshopContext>());
         }
 
 
