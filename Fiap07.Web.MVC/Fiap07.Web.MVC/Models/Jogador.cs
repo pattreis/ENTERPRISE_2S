@@ -10,6 +10,7 @@ namespace Fiap07.Web.MVC.Models
         public int JogadorId { get; set; }
         public string Nome { get; set; }
         public DateTime DataNascimento { get; set; }
+        public Posicao? Posicao { get; set; }
 
         //Relacionamentos
         public Time Time { get; set; }
