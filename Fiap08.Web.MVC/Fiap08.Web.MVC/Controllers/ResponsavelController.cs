@@ -1,4 +1,5 @@
-﻿using Fiap08.Web.MVC.Units;
+﻿using Fiap08.Web.MVC.Models;
+using Fiap08.Web.MVC.Units;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,7 +12,22 @@ namespace Fiap08.Web.MVC.Controllers
     {
         private UnitOfWork _unit = new UnitOfWork();
 
-        // GET: Responsavel
+        [HttpPost]
+        public ActionResult Cadastrar(Responsavel responsavel)
+        {
+            _unit.ResponsavelRepository.Cadastrar(responsavel);
+            TempData["msg"] = "Cadastrado com sucesso!";
+            return RedirectToAction("Cadastrar");
+        }
+
+        [HttpGet]
+        public ActionResult Listar() {
+
+            _unit.ResponsavelRepository.ToString();
+            return RedirectToAction("Listar");
+        }
+
+        [HttpGet]
         public ActionResult Cadastrar()
         {
             return View();
