@@ -1,0 +1,29 @@
+﻿@model List<Fiap08.Web.MVC.Models.Dependente>
+
+@{
+    ViewBag.Title = "Listar";
+}
+
+<h2>Listar de Dependentes</h2>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Nome Dependente</th>
+            <th>Data Nascimento</th>
+            <th>Responsável</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var dependentes in Model)
+        {
+            <tr>
+                <td>@dependentes.Nome</td>
+                <td>@dependentes.DataNascimento</td>
+                <td>@dependentes.Responsavel.Nome</td>
+                <td>@(dependentes.Bolsista? "Sim" : "Não")</td>
+            </tr>
+        }
+    </tbody>
+</table>

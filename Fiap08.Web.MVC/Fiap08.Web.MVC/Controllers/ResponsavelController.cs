@@ -22,9 +22,8 @@ namespace Fiap08.Web.MVC.Controllers
 
         [HttpGet]
         public ActionResult Listar() {
-
-            _unit.ResponsavelRepository.ToString();
-            return RedirectToAction("Listar");
+            var lista = _unit.ResponsavelRepository.Listar();
+            return View(lista);
         }
 
         [HttpGet]

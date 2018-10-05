@@ -1,0 +1,34 @@
+﻿@model Fiap08.Web.MVC.Models.Dependente
+@{
+    ViewBag.Title = "Cadastrar";
+}
+
+<h2>Cadastrar Dependente</h2>
+@if (TempData["msg"] != null)
+{
+    <div class="alert-success">
+        @TempData["msg"]
+    </div>
+}
+
+@using (Html.BeginForm())
+{
+    <div class="form-group">
+        @Html.LabelFor(c => c.Nome)
+        @Html.TextBoxFor(c => c.Nome, new { @class = "form-control" })
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(c => c.DataNascimento, "Data Nascimento")
+        @Html.TextBoxFor(c => c.DataNascimento, new { @class = "form-control" })
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(c => c.Responsavel)
+        @Html.DropDownListFor(c => c.ResponsavelId, ViewBag.responsaveis as SelectList, "Selecione")
+    </div>
+
+    <input type="submit" value="Cadastrar" class="btn btn-primary" />
+
+}
+

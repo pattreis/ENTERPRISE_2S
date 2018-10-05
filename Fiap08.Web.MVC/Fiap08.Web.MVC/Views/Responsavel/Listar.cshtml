@@ -1,7 +1,26 @@
-﻿
+﻿@model List<Fiap08.Web.MVC.Models.Responsavel>
+
 @{
     ViewBag.Title = "Listar";
 }
 
-<h2>Listar</h2>
+<h2>Lista de Responsáveis</h2>
 
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Nome do Responsável</th>
+            <th>Telefone</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var responsaveis in Model)
+        {
+            <tr>
+                <td>@responsaveis.Nome</td>
+                <td>@responsaveis.Telefone</td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -30,7 +30,7 @@ namespace Fiap08.Web.MVC.Repositories
 
         public IList<Dependente> BuscarPor(Expression<Func<Dependente, bool>> filtros)
         {
-            return _context.Dependentes.Where(filtros).ToList();
+            return _context.Dependentes.Include("Responsavel").Where(filtros).ToList();
         }
 
         public void Cadastrar(Dependente dependente)
@@ -40,7 +40,7 @@ namespace Fiap08.Web.MVC.Repositories
 
         public IList<Dependente> Listar()
         {
-            return _context.Dependentes.ToList();
+            return _context.Dependentes.Include("Responsavel").ToList();
         }
 
         public void Remover(int Codigo)

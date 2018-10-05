@@ -18,5 +18,7 @@ namespace Fiap08.Web.MVC.Models
 
         public int ResponsavelId { get; set; }
 
+        public bool Bolsista { get; set; }
+
     }
 }
