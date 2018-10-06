@@ -1,0 +1,28 @@
+﻿@model Fiap.Web.Estudo.Nac2.Models.Proprietario
+
+@{
+    ViewBag.Title = "Cadastrar";
+}
+
+<h2>Cadastrar Proprietário</h2>
+
+@using (Html.BeginForm())
+{
+
+    <div class="form-group">
+        @Html.LabelFor(p => p.Nome)
+        @Html.TextBoxFor(p => p.Nome, new { @class = "form-control", @placeholder = "Digite o nome..." })
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(p => p.Telefone)
+        @Html.TextBoxFor(p => p.Telefone, new { @type="number", @class = "form-control", @placeholder = "DDD - Número..." })
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(p => p.DtNasc)
+        @Html.TextBoxFor(p => p.DtNasc, new { @class = "form-control", @type = "date" })
+    </div>
+
+    <input type="submit" value="Cadastrar" class="btn btn-success"/>
+}
