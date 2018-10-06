@@ -3,10 +3,10 @@
     ViewBag.Title = "Cadastrar";
 }
 
-<h2>Cadastrar Dependente</h2>
+<h2>Cadastro de Dependente</h2>
 @if (TempData["msg"] != null)
 {
-    <div class="alert-success">
+    <div class="alert alert-success">
         @TempData["msg"]
     </div>
 }
@@ -19,8 +19,8 @@
     </div>
 
     <div class="form-group">
-        @Html.LabelFor(c => c.DataNascimento, "Data Nascimento")
-        @Html.TextBoxFor(c => c.DataNascimento, new { @class = "form-control" })
+        @Html.LabelFor(c => c.DataNascimento)
+        @Html.TextBoxFor(c => c.DataNascimento, new { @class = "form-control", @type = "date" })
     </div>
 
     <div class="form-group">

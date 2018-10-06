@@ -16,6 +16,7 @@ namespace Fiap08.Web.MVC.Controllers
         public ActionResult Cadastrar(Responsavel responsavel)
         {
             _unit.ResponsavelRepository.Cadastrar(responsavel);
+            _unit.Salvar();
             TempData["msg"] = "Cadastrado com sucesso!";
             return RedirectToAction("Cadastrar");
         }

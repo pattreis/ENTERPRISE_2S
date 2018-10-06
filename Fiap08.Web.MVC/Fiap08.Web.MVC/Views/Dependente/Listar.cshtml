@@ -13,6 +13,7 @@
             <th>Nome Dependente</th>
             <th>Data Nascimento</th>
             <th>Responsável</th>
+            <th>Bolsista</th>
         </tr>
     </thead>
     <tbody>
@@ -20,7 +21,7 @@
         {
             <tr>
                 <td>@dependentes.Nome</td>
-                <td>@dependentes.DataNascimento</td>
+                <td>@dependentes.DataNascimento.ToShortDateString()</td>
                 <td>@dependentes.Responsavel.Nome</td>
                 <td>@(dependentes.Bolsista? "Sim" : "Não")</td>
             </tr>

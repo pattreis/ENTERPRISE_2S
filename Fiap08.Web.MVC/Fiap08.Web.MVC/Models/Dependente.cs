@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 
@@ -11,6 +12,8 @@ namespace Fiap08.Web.MVC.Models
 
         public string Nome { get; set; }
 
+        [UIHint("Date")]
+        [Display(Name ="Data Nascimento")]
         public DateTime DataNascimento { get; set; }
 
         //Relacionamento
