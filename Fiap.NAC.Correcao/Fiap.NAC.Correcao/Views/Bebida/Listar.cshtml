@@ -1,0 +1,71 @@
+﻿@model List<Fiap.NAC.Correcao.Models.Bebida>
+@{
+    ViewBag.Title = "Listar";
+}
+
+<h2>Listar</h2>
+
+@using (Html.BeginForm("Pesquisar", "Bebida", FormMethod.Get))
+{
+    <input type="text" name="nome" class="form-control" />
+    <input type="submit" value="Pesquisar" class="btn btn-primary" />
+}
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Bebida</th>
+            <th>Data de Validade</th>
+            <th>Valor</th>
+            <th>Alcoolismo</th>
+            <th> </th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var b in Model)
+        {
+            <tr>
+                <td>@b.Nome</td>
+                <td>@b.DataValidade.ToShortDateString()</td>
+                <td>@b.Valor</td>
+                <td>@(b.Alcoolismo ? "Sim" : "Não")</td>
+                <td>
+                    <button onclick="idcodigo.value = @b.BebidaId" type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal">
+                        Excluir
+                    </button>
+                </td>
+            </tr>
+        }
+    </tbody>
+
+</table>
+
+
+
+<!-- Button trigger modal -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Deseja realmente excluir?</h4>
+            </div>
+            <div class="modal-body">
+                ...
+            </div>
+            <div class="modal-footer">
+                @using (Html.BeginForm("Remover","Bebida", FormMethod.Post))
+                {
+                    <input type="hidden" name="codigo" id="idcodigo"/>
+                    <button type="submit" class="btn btn-primary">Sim</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Não</button>
+                }
+
+            </div>
+        </div>
+    </div>
+</div>
